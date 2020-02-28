@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: CrystalBetUni;
     src: url(CrystalBetUni-Regular.otf);
 
@@ -88,7 +88,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: black; */
 } 
 .for-img > img{
   width: 100%;
@@ -102,12 +101,7 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 }
-/* form{
-  display: flex;
-  flex-direction: column;
-  width:100%;
-  align-items: center;
-} */
+
 
 @media only screen and (min-width: 300px) and (max-width: 480px){
   .for-img{
@@ -139,7 +133,7 @@ justify-content: center;
   background: white;
 }
   .container {
-    /* display: flex;
+    display: flex;
     align-items: center;
     position: relative;
     padding-left: 60px;
@@ -149,7 +143,7 @@ justify-content: center;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none; */
+    user-select: none;
     font-size: 15px;
     color: rgb(90, 89, 89);
     font-family: CrystalBetUni;
@@ -158,11 +152,6 @@ justify-content: center;
     border: 1px solid #eee;
     box-shadow: 0px 0px  2px 2px #eee;
     border-radius: 15px;
-    display: -webkit-box;
-    display: -webkit-flex; 
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
   }
   .main-container{
     flex-direction: column;
@@ -185,4 +174,239 @@ justify-content: center;
   }
 }
 
+ */
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+@font-face {
+  font-family: CrystalBetUni;
+  src: url(CrystalBetUni-Regular.otf);
+
+} 
+
+.container {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+position: relative;
+padding-left: 60px;
+margin-bottom: 12px;
+cursor: pointer;
+font-size: 22px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+font-size: 23px;
+color: rgb(90, 89, 89);
+font-family: CrystalBetUni;
+min-height: 40px;
+width: 600px;
+border: 1px solid #eee;
+-webkit-box-shadow: 0px 0px  2px 2px #eee;
+        box-shadow: 0px 0px  2px 2px #eee;
+border-radius: 15px;
+}
+
+.container input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+}
+.container:hover{
+border: 1px solid #58a0ff;
+-webkit-box-shadow: 0px 0px  2px 2px #58a0ff;
+        box-shadow: 0px 0px  2px 2px #58a0ff;
+background-color: #eee;
+}
+.checkmark {
+position: absolute;
+left: 10px;
+height: 25px;
+width: 25px;
+background-color: #eee;
+border-radius: 50%;
+}
+.container:hover input ~ .checkmark {
+background-color: #58a0ff;
+}
+.container input:checked ~ .checkmark {
+background-color: #58a0ff;
+}
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+.container input:checked ~ .checkmark:after {
+display: block;
+}
+.main-content{
+display: inline-block;
+-webkit-box-align:center ;
+    -ms-flex-align:center ;
+        align-items:center ;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+width: 100px;
+}
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+
+.question{
+margin: 20px 0 20px 0px;
+width: 650px;
+min-height: 30px;
+font-size: 25px;
+color: rgb(90, 89, 89);
+font-family: CrystalBetUni;
+}
+.for-img{
+width: 600px;
+height: 350px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+/* background-color: black; */
+} 
+.for-img > img{
+width: 100%;
+height:100%;
+
+}
+.main-container{
+width: 100%;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+-webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+-webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+/* form{
+display: flex;
+flex-direction: column;
+width:100%;
+align-items: center;
+} */
+
+@media only screen and (min-width: 300px) and (max-width: 480px){
+.for-img{
+  width: 250px;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+} 
+.checkmark {
+  position: absolute;
+  left: 10px;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.for-img > img{
+  width: 300px;
+  height:200px;
+  }
+  
+.container .checkmark:after {
+top: 5.5px;
+left: 5.5px;
+width: 4.5px;
+height: 4.5px;
+border-radius: 50%;
+background: white;
+}
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 15px;
+  color: rgb(90, 89, 89);
+  font-family: CrystalBetUni;
+  min-height: 30px;
+  width: 300px;
+  border: 1px solid #eee;
+  -webkit-box-shadow: 0px 0px  2px 2px #eee;
+          box-shadow: 0px 0px  2px 2px #eee;
+  border-radius: 15px;
+}
+.main-container{
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.question{
+  margin: 20px 0 20px 0px;
+  width: 350px;
+  min-height: 15px;
+  font-size: 17px;
+  color: rgb(90, 89, 89);
+  font-family: CrystalBetUni;
+}
+.form{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+}
 

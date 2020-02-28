@@ -6,10 +6,11 @@
 
 .container {
   display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
   align-items: center;
-  position: relative;
-  padding-left: 60px;
   margin-bottom: 12px;
+  padding-left: 40px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -100,7 +101,6 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 }
-
 
 @media only screen and (min-width: 300px) and (max-width: 480px){
   .for-img{

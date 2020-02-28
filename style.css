@@ -6,12 +6,13 @@
 
 .container {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  -webkit-align-items: center;
+
   position: relative;
   padding-left: 60px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -134,16 +135,10 @@ justify-content: center;
 }
   .container {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     position: relative;
     padding-left: 60px;
     margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
     font-size: 15px;
     color: rgb(90, 89, 89);
     font-family: CrystalBetUni;

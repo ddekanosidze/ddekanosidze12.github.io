@@ -83,7 +83,7 @@
   font-family: CrystalBetUni;
 }
 .for-img{
-  width: 450px;
+  width: 600px;
   height: 350px;
   display: flex;
   justify-content: center;
@@ -146,14 +146,14 @@ justify-content: center;
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 22px;
-    -webkit-user-select: none;
+    /* -webkit-user-select: none;
     -moz-user-select: none;
-    -ms-user-select: none;
+    -ms-user-select: none; */
     user-select: none;
     font-size: 15px;
-    color: black;
+    color: rgb(90, 89, 89);
     font-family: CrystalBetUni;
-    min-height: 20px;
+    min-height: 30px;
     width: 300px;
     border: 1px solid #eee;
     box-shadow: 0px 0px  2px 2px #eee;
@@ -169,7 +169,7 @@ justify-content: center;
     width: 350px;
     min-height: 15px;
     font-size: 17px;
-    color: black;
+    color: rgb(90, 89, 89);
     font-family: CrystalBetUni;
   }
   .form{

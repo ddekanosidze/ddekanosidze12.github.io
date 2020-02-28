@@ -1,0 +1,144 @@
+@font-face {
+    font-family: CrystalBetUni;
+    src: url(CrystalBetUni-Regular.otf);
+
+} 
+
+.container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 23px;
+  color: black;
+  font-family: CrystalBetUni;
+  min-height: 40px;
+  width: 600px;
+  border: 1px solid #eee;
+  box-shadow: 0px 0px  2px 2px #eee;
+  border-radius: 15px;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.container:hover{
+  border: 1px solid #58a0ff;
+  box-shadow: 0px 0px  2px 2px #58a0ff;
+  background-color: #eee;
+}
+.checkmark {
+  position: absolute;
+  left: 10px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.container:hover input ~ .checkmark {
+  background-color: #58a0ff;
+}
+.container input:checked ~ .checkmark {
+  background-color: #58a0ff;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+.main-content{
+  display: inline-block;
+  align-items:center ;
+  flex-direction: column;
+  width: 100px;
+}
+.container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+.question{
+  margin: 20px 0 20px 0px;
+  width: 650px;
+  min-height: 30px;
+  font-size: 25px;
+  color: black;
+  font-family: CrystalBetUni;
+}
+.for-img{
+  width: 450px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: black; */
+} 
+.for-img > img{
+  width: 100%;
+  height:100%;
+
+}
+.main-container{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+@media only screen and (max-width: 640) {
+  .for-img > img{
+  width: 500px;
+  height:350px;
+  };
+
+}
+@media only screen and (min-width: 300px) and (max-width: 480px){
+  .for-img > img{
+    width: 300px;
+    height:200px;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding-left: 60px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 22px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      font-size: 23px;
+      color: black;
+      font-family: CrystalBetUni;
+      min-height: 20px;
+      width: 400px;
+      border: 1px solid #eee;
+      box-shadow: 0px 0px  2px 2px #eee;
+      border-radius: 15px;
+    }
+}
+/* @media only screen and (min-width: 370px) and (max-width: 640px){
+  .for-img > img{
+    width: 50px;
+    height:30px;
+    }
+} */
+

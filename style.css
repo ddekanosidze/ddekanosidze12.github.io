@@ -139,9 +139,9 @@ justify-content: center;
   background: white;
 }
   .container {
-    display: flex;
+ 
       display: -webkit-flex;
-    align-items: center;
+   
     position: relative;
     padding-left: 60px;
     margin-bottom: 12px;

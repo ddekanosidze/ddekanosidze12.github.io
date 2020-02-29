@@ -3,14 +3,10 @@
     src: url(CrystalBetUni-Regular.otf);
 
 } 
-
 .container {
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-evenly;
   align-items: center;
-  /* margin-bottom: 12px; */
-  /* padding-left: 40px; */
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -25,16 +21,6 @@
   box-shadow: 0px 0px  2px 2px #eee;
   border-radius: 15px;
 }
-
-/* .container input {
-  opacity:0;
-  display: inline-block;
-  cursor: pointer;
-  height: 30px;
-  width: 30px;
-  color: blue;
-  background: blue;
-} */
 .container:hover{
   border: 1px solid #58a0ff;
   box-shadow: 0px 0px  2px 2px #58a0ff;
@@ -43,17 +29,15 @@
 input[type=radio]{
   visibility: hidden;
 }
-.span{
+.answer-option{
   width: 90%;
   height: 100%;
-  /* margin-left: 2%; */
 }
 input[type=radio] + label:before{
   display:block;
   height:18px;
   width:18px;
   content: " ";
-  /* margin-left: 2%; */
   vertical-align: baseline;
 }
 
@@ -79,11 +63,14 @@ input[type=radio]:hover + label:before{
 
 .question{
   margin: 20px 0 20px 0px;
-  width: 650px;
+  width: 600px;
   min-height: 30px;
   font-size: 25px;
-  color: rgb(90, 89, 89);
+  color: rgb(190, 1, 1);
+
   font-family: CrystalBetUni;
+  font-weight: bold;
+
 }
 .for-img{
   width: 600px;
@@ -106,19 +93,26 @@ justify-content: center;
 }
 
 @media only screen and (min-width: 300px) and (max-width: 480px){
-  .for-img{
-    width: 250px;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } 
- 
-  .for-img > img{
-    width: 100%;
-    height:100%;
-    }
-    
+.for-img{
+  width: 300px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.for-img > img{
+  width: 100%;
+  height:100%;
+}
+
+input[type=radio] + label:before{
+  display:block;
+  height:13px;
+  width:13px;
+  content: " ";
+  vertical-align: baseline;
+} 
 
 .container {
   display: flex;
@@ -141,17 +135,13 @@ justify-content: center;
   justify-content: center;
 }
 .question{
-  margin: 20px 0 20px 0px;
-  width: 350px;
+  margin: 10px 0 0px 0px;
+  width: 300px;
   min-height: 15px;
   font-size: 17px;
-  color: rgb(90, 89, 89);
+  color: rgb(190, 1, 1);
+  font-weight: bold;
   font-family: CrystalBetUni;
 }
-.form{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-}
+
 }

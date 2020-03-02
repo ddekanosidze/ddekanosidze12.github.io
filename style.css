@@ -13,7 +13,7 @@
   -ms-user-select: none;
   user-select: none;
   font-size: 23px;
-  color: rgb(90, 89, 89);
+  color: rgb(126, 126, 126);
   font-family: CrystalBetUni;
   min-height: 40px;
   width: 600px;
@@ -39,6 +39,7 @@ input[type=radio] + label:before{
   width:18px;
   content: " ";
   vertical-align: baseline;
+  transition: 0.5s;
 }
 
 input[type=radio]:checked + label:before{
@@ -91,7 +92,14 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 }
+.game-name{
+  font-size: 32px;
+  font-family: CrystalBetUni;
+  /* font-style: italic; */
+  width: 600px;
+  color: rgb(190, 1, 1);
 
+}
 @media only screen and (min-width: 300px) and (max-width: 480px){
 .for-img{
   width: 300px;
@@ -112,6 +120,7 @@ input[type=radio] + label:before{
   width:13px;
   content: " ";
   vertical-align: baseline;
+  
 } 
 
 .container {

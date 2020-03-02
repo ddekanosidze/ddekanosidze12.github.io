@@ -95,10 +95,12 @@ justify-content: center;
 .game-name{
   font-size: 32px;
   font-family: CrystalBetUni;
-  /* font-style: italic; */
   width: 600px;
   color: rgb(190, 1, 1);
 
+}
+.answers-container{
+  margin-top: 10%;
 }
 @media only screen and (min-width: 300px) and (max-width: 480px){
 .for-img{
@@ -108,7 +110,13 @@ justify-content: center;
   justify-content: center;
   align-items: center;
 } 
+.game-name{
+  font-size: 17px;
+  font-family: CrystalBetUni;
+  width: 300px;
+  color: rgb(190, 1, 1);
 
+}
 .for-img > img{
   width: 100%;
   height:100%;
@@ -119,16 +127,15 @@ input[type=radio] + label:before{
   height:13px;
   width:13px;
   content: " ";
-  vertical-align: baseline;
-  
+  vertical-align: baseline;  
 } 
-
+.answers-container{
+  
+}
 .container {
   display: flex;
   align-items: center;
   position: relative;
-  /* padding-left: 60px; */
-  /* margin-bottom: 12px; */
   font-size: 15px;
   color: rgb(90, 89, 89);
   font-family: CrystalBetUni;

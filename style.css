@@ -102,7 +102,37 @@ justify-content: center;
 .answers-container{
   margin-top: 10%;
 }
-@media only screen and (min-width: 300px) and (max-width: 480px){
+.submit-button{
+  height: 50px;
+  width: 100px;
+  color: white;
+  font-family: CrystalBetUni;
+  font-size: 22px;
+  border: none;
+  background-color: #58a0ff;
+  border-radius: 10%;
+  margin-left: 40%;
+  margin-top: 10%;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.submit-button:hover{
+  color: black;
+}
+.submit-information-popup{
+  display: none;
+  position: fixed;
+  top:10%;
+  margin-left: 4%;
+  width: 500px;
+  height: 200px;
+  border: 3px solid rgb(90, 89, 89);
+  background-color: white;
+  border-radius: 20px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 530px){
 .for-img{
   width: 300px;
   height: 180px;
@@ -129,9 +159,6 @@ input[type=radio] + label:before{
   content: " ";
   vertical-align: baseline;  
 } 
-.answers-container{
-  
-}
 .container {
   display: flex;
   align-items: center;
@@ -159,5 +186,28 @@ input[type=radio] + label:before{
   font-weight: bold;
   font-family: CrystalBetUni;
 }
-
+.submit-button {
+  height: 40px;
+  width: 60px;
+  color: white;
+  font-family: CrystalBetUni;
+  font-size: 17px;
+  border: none;
+  background-color: #58a0ff;
+  border-radius: 10%;
+  margin-left: 40%;
+  margin-top: 20%;
+  outline: none;
+}
+.submit-information-popup{
+  display: none;
+  position: fixed;
+  top:15%;
+  margin-left: 4%;
+  width: 300px;
+  height: 150px;
+  border: 3px solid rgb(90, 89, 89);
+  background-color: white;
+  border-radius: 15px;
+}
 }
